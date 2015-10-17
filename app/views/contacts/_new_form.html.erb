@@ -1,0 +1,61 @@
+
+  <form id="part6">
+    <h3 align="center" style="color: #ef4056; font-size: larger; font-weight: bolder; margin-top: 2%">Send Me a Message for More Info</h3>
+
+    <%= simple_form_for Contact.new, :html => {class: "form-horizontal"} do |f| %>
+        <div class="form-group">
+          <label for="exampleInputEmail1" style="color: blue; font-weight: bolder">Your Name</label>
+          <%= f.text_field :name, :required => true, label: false, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" style="color: blue; font-weight: bolder">Email address</label>
+          <%= f.text_field :email, :required => true, label: false, class:"form-control" %>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" style="color: blue; font-weight: bolder">Message</label>
+          <%= f.text_field :message, :as => :text, :required => true, label: false, class:"form-control" %>
+
+          <div class="hidden">
+            <%= f.input :nickname, :hint => "Leave this field blank!" %>
+          </div>
+        </div>
+
+
+        <div style="margin-left: 20%; margin-bottom: 20px;">
+          </br>
+          <%= f.button :submit, "Send message", :class => "btn btn-primary" %>
+        </div>
+
+
+    <% end %>
+
+  </form>
+
+
+<!--
+<div class="container">
+  <h3>Send Me a Message for More Info</h3>
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputFile">File input</label>
+      <input type="file" id="exampleInputFile">
+      <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Check me out
+      </label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+-->

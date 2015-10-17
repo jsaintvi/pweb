@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jodex-website</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="p_header">
+  <%= render "layouts/header" %>
+</div>
+<div class="p_header">
+  <%= yield %>
+</div>
+
+<div>
+  <%= render "layouts/footer" %>
+</div>
+
+
+</body>
+</html>
