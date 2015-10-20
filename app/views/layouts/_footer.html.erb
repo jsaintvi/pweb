@@ -43,88 +43,91 @@
 -->
 
 
-<footer id="footerFormat">
-  <div class="footer" id="footer">
+<div class="row">
+    <footer id="footerFormat">
+      <div class="footer" id="footer">
 
-      <div class="container">
-        <div class="row">
-          <div class="footer-title">Contact us</div>
-          <div class="footer-subtitle"></div>
+          <div class="container">
+            <div class="row">
+              <div class="footer-title">Contact us</div>
+              <div class="footer-subtitle"></div>
+            </div>
+            <div class="row">
+              <div class="footer-column">
+
+                <div class="info-box contact-form-success" id="contact-form-success" style="display:none;"></div>
+                <div class="info-box contact-form-errors" id="contact-form-errors"></div>
+                <!--
+                <form accept-charset="UTF-8" action="/deliver_mail" data-remote="true" id="contact_form" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+                  <div class="form-group">
+                    <div class="form-controls">
+                      <input id="name" name="name" placeholder="name" type="text" value="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-controls">
+                      <input id="email" name="email" placeholder="email" type="text" value="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-controls">
+                      <textarea id="message" name="message" placeholder="message"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group submit-button">
+                    <input name="commit" type="submit" value="send">
+                  </div>
+                </form>
+                 -->
+
+                    <%= render "contacts/new_form" %>
+
+                <div class="vr">&nbsp;</div>
+
+                <div data-width="100%" class="fb-like-box" data-href="#" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
+              </div>
+              <div class="footer-column" >
+
+                <div class="half-width pull-left" style="color: white;">
+                  <div class="footer-small-title" style="color: #ef4056; font-size: large; font-weight: bolder; margin-top: 2%">Contact:</div>
+                  <div class="footer-content">
+                    <a href="mailto:jsaintvi@kent.edu">jsaintvi@kent.edu</a>
+                    <br>
+                    phone: (330)289-7787
+                  </div>
+                </div>
+
+
+
+    <br /> <br /> <br />
+
+                <div class="half-width pull-left">
+                  <div class="footer-small-title" style="color: #ef4056; font-size: large; font-weight: bolder; margin-top: 2%">Location :</div>
+                  <div class="footer-content">
+                    Jodex Saint-Vil
+                    <br>
+                    225 Midway Drive
+                    <br>
+                    Kent, Ohio
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="footer-column">
 
-            <div class="info-box contact-form-success" id="contact-form-success" style="display:none;"></div>
-            <div class="info-box contact-form-errors" id="contact-form-errors"></div>
-            <!--
-            <form accept-charset="UTF-8" action="/deliver_mail" data-remote="true" id="contact_form" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
-              <div class="form-group">
-                <div class="form-controls">
-                  <input id="name" name="name" placeholder="name" type="text" value="">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-controls">
-                  <input id="email" name="email" placeholder="email" type="text" value="">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-controls">
-                  <textarea id="message" name="message" placeholder="message"></textarea>
-                </div>
-              </div>
-              <div class="form-group submit-button">
-                <input name="commit" type="submit" value="send">
-              </div>
-            </form>
-             -->
 
-                <%= render "contacts/new_form" %>
-
-            <div class="vr">&nbsp;</div>
-
-            <div data-width="100%" class="fb-like-box" data-href="#" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
+      <div class="black-footer">
+        <div class="container">
+          <div class="footer-copyright">
+            © 2015 Jodex Saint-Vil - Ruby on Rails Developer | Software Developer
+            &nbsp;
           </div>
-          <div class="footer-column" >
-
-            <div class="half-width pull-left" style="color: white;">
-              <div class="footer-small-title" style="color: #ef4056; font-size: large; font-weight: bolder; margin-top: 2%">Contact:</div>
-              <div class="footer-content">
-                <a href="mailto:jsaintvi@kent.edu">jsaintvi@kent.edu</a>
-                <br>
-                phone: (330)289-7787
-              </div>
-            </div>
-
-
-
-<br /> <br /> <br />
-
-            <div class="half-width pull-left">
-              <div class="footer-small-title" style="color: #ef4056; font-size: large; font-weight: bolder; margin-top: 2%">Location :</div>
-              <div class="footer-content">
-                Jodex Saint-Vil
-                <br>
-                225 Midway Drive
-                <br>
-                Kent, Ohio
-
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-    </div>
 
-  </div>
-  <div class="black-footer">
-    <div class="container">
-      <div class="footer-copyright">
-        © 2015 Jodex Saint-Vil - Ruby on Rails Developer | Software Developer
-        &nbsp;
-      </div>
-    </div>
-  </div>
+    </footer>
 
-</footer>
+</div>
